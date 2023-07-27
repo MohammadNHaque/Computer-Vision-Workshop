@@ -1,16 +1,40 @@
 # The Computer Vision Workshop
 
-1. Basics of Image Processing
-2. Common Operations When Working with Images
-3. Working with Histograms 
-4. Working with Contours 
+
+# What you’ll learn
+<ul>
+<li>Access and manipulate pixels in OpenCV using BGR and grayscale images</li>
+<li>Create histograms to better understand image content</li>
+<li>Use contours for shape analysis, object detection, and recognition</li>
+<li>Track objects in videos using a variety of trackers available in OpenCV</li>
+<li>Discover how to apply face recognition tasks using computer vision techniques</li>
+<li>Visualize 3D objects in point clouds and polygon meshes using Open3D</li>
+</ul>
+
+# Description
+
+Computer Vision (CV) has become an important aspect of AI technology. From driverless cars to medical diagnostics and monitoring the health of crops to fraud detection in banking, computer vision is used across all domains to automate tasks. The Computer Vision Workshop will help you understand how computers master the art of processing digital images and videos to mimic human activities.
+
+ 
+
+Starting with an introduction to the OpenCV library, you'll learn how to write your first script using basic image processing operations. You'll then get to grips with essential image and video processing techniques such as histograms, contours, and face processing. As you progress, you'll become familiar with advanced computer vision and deep learning concepts, such as object detection, tracking, and recognition, and finally shift your focus from 2D to 3D visualization. This CV course will enable you to experiment with camera calibration and explore both passive and active canonical 3D reconstruction methods.
+
+ 
+
+By the end of this interactive course, you'll have developed the practical skills necessary for building powerful applications to solve computer vision problems.
+
+# Chapters 
+1. [Basics of Image Processing](Chapter_01_Basics_of_Image_Processing.ipynb)
+2. [Common Operations When Working with Images](Chapter_02_Common_Operations_with_Images.ipynb)
+3. [Working with Histograms](Chapter_03_Histograms.ipynb)
+4. [Working with Contours](Chapter_04_Working_with_Contours.ipynb)
 5. Face Processing in Image and Video
 6. Object Tracking
 7. Object Detection and Face Recognition
 8. OpenVINO with OpenCV
 
 
-## Requirements
+# Requirements
 ```
 open3d==0.16.0
 opencv-contrib-python==4.8.0.74
@@ -34,21 +58,3 @@ $ source packt/bin/activate
 $ pip install -r MyRequirements.txt
 ```
 
-# 1. Basics of Image Processing
-## Numpy Arrays
-```python
-import numpy as np
-
-# numpy 2D array formed as (number of rows, number of columns)
-# for image pixels we will use np.uint8 data-type
-
-# Create a 4x3 2D array filled with zeros
-img0 = np.zeros(4, 3)
-# Create a 4x3 2D array filled with ones
-img1 = np.ones(4, 3)
-# Create a 4x3 2D array filled with random numbers
-imgr = np.rand(4, 3)
-
-# View the shape of the array
-img0.shape
-```
